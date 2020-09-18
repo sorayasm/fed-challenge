@@ -1,10 +1,62 @@
 .App {
   text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.App .btn-primary {
+  color: #282c34;
+  background-color: #61dafb;
+  border-color: #61dafb;
+  font-weight: bold;
+}
+
+.App .btn-primary:hover {
+  color: #61dafb;
+  background-color: #282c34;
+  border-color: #282c34;
+  font-weight: bold;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 80px;
   pointer-events: none;
+}
+
+.App-header .search-bar.input-group {
+  max-width: 75%;
+  margin: auto;
+}
+
+.App-container .card-deck .card {
+  flex: 1 0;
+  margin: 30px 15px;
+  min-width: 280px;
+}
+
+.App-container .card-deck .card:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
+  z-index: 2;
+  transition: transform ease-in-out .4s,box-shadow ease-in-out .4s;
+}
+
+.App-container  .card-img-top {
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.App-container .btn.btn-light {
+  margin: 0 15px;
+}
+
+.App-container .card-header p.card-text {
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,18 +67,20 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
