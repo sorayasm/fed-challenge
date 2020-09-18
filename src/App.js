@@ -30,7 +30,7 @@ function App() {
 				'app-id': config.sandbox.api_key,
 				'Access-Control-Allow-Origin':'http://localhost:3000',
 				'Access-Control-Allow-Credentials': 'true',
-				"methods": "GET"
+				'methods': 'GET'
 			} 
 		};
 
@@ -63,15 +63,15 @@ function App() {
 			<Row noGutters>
 				<Col className='App-header'>
 					<img src={logo} className='App-logo' alt='logo' />
-					<p className="mt-3 mb-4">Write a tag and click search</p>
+					<p className='mt-3 mb-4'>Write a tag and click search</p>
 					<Search display={display}/>
 				</Col>
 			</Row>
 			<Row noGutters>
 				<Col className='App-container'>
 				{ (loading || (loading && (info === null))) && 
-					<div className="mt-5">
-						<Spinner animation="grow" />
+					<div className='mt-5'>
+						<Spinner animation='grow' />
 					</div>
 					
 				}
@@ -88,7 +88,7 @@ function App() {
 					</Container>
 				)}
 				{ !loading && info && (info.length === 0 ) &&(
-					<Image src="https://blog.expertrec.com/wp-content/uploads/2019/01/no_results_found.png" fluid />
+					<Image src='https://blog.expertrec.com/wp-content/uploads/2019/01/no_results_found.png' fluid />
 				)}
 				</Col>
 			</Row>

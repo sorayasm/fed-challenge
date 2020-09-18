@@ -47,7 +47,7 @@ export default function Box(props) {
                 </Card.Text>
             </Card.Body>
             <Card.Footer>
-                <small className="text-muted">Published on: {new Date(e.publishDate).toLocaleDateString()}</small>
+                <small className='text-muted'>Published on: {new Date(e.publishDate).toLocaleDateString()}</small>
             </Card.Footer>
         </Card>
     )

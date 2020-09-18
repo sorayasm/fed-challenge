@@ -29,18 +29,18 @@ class Search extends Component {
             <Container>
                 <Form.Row>
                     <Col>
-                        <InputGroup className="mb-3 search-bar">
+                        <InputGroup className='mb-3 search-bar'>
                             <FormControl
-                                placeholder="Search a tag"
-                                aria-label="Search a tag"
-                                aria-describedby="basic-addon2"
+                                placeholder='Search a tag'
+                                aria-label='Search a tag'
+                                aria-describedby='basic-addon2'
                                 value={input}
                                 onChange={(e)=> this.getData(e)}
                                 onBlur={()=>{display(input)}}
                             />
                             <InputGroup.Append>
                                 <Button 
-                                    variant="outline-light"
+                                    variant='outline-light'
                                     onClick={()=>{display(input)}}
                                 >
                                     Search
